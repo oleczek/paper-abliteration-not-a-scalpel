@@ -1,0 +1,23 @@
+wczytano 21600 decyzji z final.db; leksykon: doubt_lexicon_v2.txt
+
+=== P2 (prereg: ogon confidence ≤0,45; hipoteza base>abl) + progi eksploracyjne ===
+rodzina  próg    base     abl  Δ(abl−base)                  CI95%  0 w CI?
+Gemma   ≤0,45   0.00%   0.00%       +0.00pp [  +0.00,  +0.00]      TAK <- PREREG
+Gemma   ≤0,50   0.00%   0.00%       +0.00pp [  +0.00,  +0.00]      TAK
+Gemma   ≤0,55   4.35%   7.83%       +3.48pp [  +2.07,  +4.76]      nie
+Gemma   ≤0,60  16.46%  29.69%      +13.22pp [ +11.00, +15.54]      nie <- w gemma_results
+Qwen    ≤0,45   0.15%   0.00%       -0.15pp [  -0.24,  -0.06]      nie <- PREREG
+Qwen    ≤0,50   0.17%   0.00%       -0.17pp [  -0.28,  -0.07]      nie
+Qwen    ≤0,55   1.19%   0.00%       -1.19pp [  -1.54,  -0.87]      nie
+Qwen    ≤0,60   3.15%   0.00%       -3.15pp [  -3.83,  -2.50]      nie <- w gemma_results
+
+=== P3 (doubt-score na confession, tokeny/100 słów; hipoteza prereg: base>abl) — EKSPLORACYJNY (leksykon post-hoc) ===
+rodzina wariant        base     abl  Δ(abl−base)                CI95%  0 w CI?
+Gemma   CORE           3.68    2.73        -0.95 [   -1.11,   -0.80]      nie
+Gemma   CONCESSIVE     0.79    2.18        +1.39 [   +1.31,   +1.48]      nie
+Gemma   FULL           4.47    4.90        +0.43 [   +0.27,   +0.58]      nie
+Gemma   MIN            0.99    0.81        -0.18 [   -0.27,   -0.09]      nie
+Qwen    CORE           3.46    1.29        -2.17 [   -2.25,   -2.09]      nie
+Qwen    CONCESSIVE     1.29    2.28        +1.00 [   +0.88,   +1.12]      nie
+Qwen    FULL           4.74    3.57        -1.17 [   -1.32,   -1.03]      nie
+Qwen    MIN            0.37    0.15        -0.23 [   -0.26,   -0.20]      nie

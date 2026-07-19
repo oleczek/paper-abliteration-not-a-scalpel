@@ -1,0 +1,19 @@
+wczytano 21600 decyzji z final.db
+
+=== KOWARIATY CAPABILITY (instruction-following) per rodzina×ramię ===
+rodzina ramię      n JSON-ok  #ryzyk ryzyk∈2-4  rev.spec confess.ogólnik confess.słów
+Gemma   base    5400    100%    3.11      100%       95%            0.0%         24.6
+Gemma   abl     5400    100%    2.98       97%       85%            0.0%         28.6
+Qwen    base    5400    100%    4.00      100%      100%            0.1%         33.3
+Qwen    abl     5400    100%    4.00      100%      100%            0.1%         40.7
+
+=== BOOTSTRAP CI 95% delt (abl−base), resampling po 18 tygodniach, N=5000 ===
+rodzina metryka               delta                  CI95%  0 w CI?
+Gemma   bull-rate           +12.185 [  +8.537, +15.963]      nie
+Gemma   śr.confidence        -0.008 [  -0.010,  -0.006]      nie
+Gemma   confession-słów      +4.017 [  +3.829,  +4.211]      nie
+Gemma   horyzont-1w          -0.241 [  -0.537,  -0.019]      nie
+Qwen    bull-rate            +7.370 [  +4.963,  +9.722]      nie
+Qwen    śr.confidence        +0.109 [  +0.097,  +0.120]      nie
+Qwen    confession-słów      +7.390 [  +7.062,  +7.729]      nie
+Qwen    horyzont-1w         -42.019 [ -46.537, -37.519]      nie

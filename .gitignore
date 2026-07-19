@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+# artefakty budowania arXiv (regenerowalne)
+final_research/paper/arxiv/paper.pdf
+final_research/paper/arxiv/arxiv-submission.tar.gz

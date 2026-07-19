@@ -1,0 +1,34 @@
+# doubt_lexicon_v2 — leksykon PL markerów zwątpienia/hedgingu dla pola `confession`
+# STATUS PROWENIENCYJNY (uczciwie): PREREGISTRATION-v2.md wymagała zamrożenia
+# tego pliku PRZED biegiem siatki; plik nie został wtedy utworzony. Leksykon
+# zamrożono POST-HOC 2026-07-06, PO obejrzeniu danych — dlatego P3 raportujemy
+# jako analizę eksploracyjną (nie konfirmacyjną), z tabelą wrażliwości na
+# wybór leksykonu (warianty poniżej). Kryterium doboru: standardowe polskie
+# markery epistemicznej niepewności i koncesji, NIE dobrane pod wynik.
+#
+# Format: wariant<TAB>prefiks (dopasowanie prefiksowe, case-insensitive,
+# granice słów). Wariant FULL = CORE + CONCESSIVE.
+#
+# --- CORE: epistemiczna niepewność ---
+CORE	moż
+CORE	mógł
+CORE	mogł
+CORE	ryzyk
+CORE	niepewn
+CORE	wątpliw
+CORE	obaw
+CORE	zagroż
+CORE	prawdopodob
+CORE	pułapk
+# --- CONCESSIVE: koncesje / kontr-argumentacja ---
+CONCESSIVE	mimo
+CONCESSIVE	choć
+CONCESSIVE	chociaż
+CONCESSIVE	jednak
+CONCESSIVE	ale
+CONCESSIVE	wprawdzie
+CONCESSIVE	natomiast
+# --- MIN: wariant minimalny (czysta niepewność) ---
+MIN	ryzyk
+MIN	niepewn
+MIN	wątpliw
